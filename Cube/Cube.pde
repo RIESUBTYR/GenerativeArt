@@ -14,7 +14,7 @@ void draw(){
   translate(width/2,height/2,700);
   
   rotateY(frameCount * 0.015);
-  rotateX(frameCount * 0.015);
+  rotateX(frameCount * 2);
   rotateZ(frameCount * 0.015);
   
   
@@ -29,7 +29,7 @@ void draw(){
         translate(i,j,k);
         //rotateX(frameCount*0.08);
         //if(k%2==0 && i%2==0)
-          sphere(sin(t/50)*6);
+          box(sin(t/50)*6);
       //  else
          // box(sin(t/50)*6);
         popMatrix();
@@ -38,7 +38,7 @@ void draw(){
   }
   
   t+=0.5;
-  saveFrame("render/cube-####.png");
+  //saveFrame("render/cube-####.png");
 }
 
 
